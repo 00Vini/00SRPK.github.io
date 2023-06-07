@@ -9,11 +9,11 @@ math: true
 # Exemplo 1 
  Ache as reações de apoio do problema a seguir:
 
-<table><tr><td style="text-align: center;"><img src="/assets/img/1.0.png"></td></tr></table>
+<table><tr><td style="text-align: center;"><img src="/assets/img/um.png"></td></tr></table>
 
 ### Resolução:
 DLC e equilíbrio:
-  <table><tr><td style="text-align: center;"><img src="/assets/img/1.1.png"></td></tr></table>
+  <table><tr><td style="text-align: center;"><img src="/assets/img/umum.png"></td></tr></table>
   
 $$ \sum F_x = 0 \implies -H_a + 2P = 0 \implies H_a = 2P $$ 
 
@@ -27,7 +27,7 @@ $$ V_a = P - V_b \implies V_a = P - \frac{P}{4} \implies V_a = \frac{3P}{4}$$
 # Exemplo 2 
 Determinar as reações da viga a seguir.
 
- <table><tr><td style="text-align: center;"><img src="/assets/img/2.0.png"></td></tr></table>
+ <table><tr><td style="text-align: center;"><img src="/assets/img/dois.png"></td></tr></table>
 
 ### Respostas: 
 
@@ -41,13 +41,13 @@ Determinar as reações da viga a seguir.
 # Exemplo 3 
  A barra da figura está engastada e sujeita ao carregamento mostrado abaixo, usando seus conhecimentos sobre esforços internos em vigas, determine as equações do cortante e do momento fletor para cada um dos trechos da barra.
 
- <table><tr><td style="text-align: center;"><img src="/assets/img/3.0.png"></td></tr></table>
+ <table><tr><td style="text-align: center;"><img src="/assets/img/três.png"></td></tr></table>
 
 ### Resolução:
 
 <ol>
   <li>Determinar o diagrama de corpo livre e as reações de apoio.
- <table><tr><td style="text-align: center;"><img src="/assets/img/3.1.png"></td></tr></table>
+ <table><tr><td style="text-align: center;"><img src="/assets/img/trêsum.png"></td></tr></table>
 
 $$ \sum F_y = 0 \implies V_a - 20 - 15 - 30 - 10(1,5 + 0,8 + 1,1) = 0 $$
 $$ V_a = 99 kN$$
@@ -57,11 +57,11 @@ $$ M_a - 20*1,5 - 15(1,5+0,8) - 30(1,5+0,8+1,1) - \frac{34(1,5+0,8+1,1)}{2} = 0$
 $$ M_a = 224,4 kNm$$
   </li>
   <li>Agora precisamos cortar cada trecho da nossa peça, lembrar da utilização de sinais e fazer o equilíbrio da peça.
-<table><tr><td style="text-align: center;"><img src="/assets/img/3.2.png"></td></tr></table>
+<table><tr><td style="text-align: center;"><img src="/assets/img/trêsdois.png"></td></tr></table>
 Para o trecho BC:
-<table><tr><td style="text-align: center;"><img src="/assets/img/3.3.png"></td></tr></table>
+<table><tr><td style="text-align: center;"><img src="/assets/img/trêstrês.png"></td></tr></table>
 Para o trecho CD:
-<table><tr><td style="text-align: center;"><img src="/assets/img/3.4.png"></td></tr></table>
+<table><tr><td style="text-align: center;"><img src="/assets/img/trêsquatro.png"></td></tr></table>
 
 </li>
   <li>Agora vamos fazer o equilíbrio da peça para calcular as equações.

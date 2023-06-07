@@ -8,7 +8,7 @@ math: true
 # Exemplo 1 
 Calcule as reações de apoio e esforços solicitantes do problema a seguir:
 
-<table><tr><td style="text-align: center;"><img src="/assets/img/ex1.png"></td></tr></table>
+<table><tr><td style="text-align: center;"><img src="/assets/img/exum.png"></td></tr></table>
 
 
 ### Resolução:
@@ -16,7 +16,7 @@ Calcule as reações de apoio e esforços solicitantes do problema a seguir:
 <ol>
   <li>Desenhar o diagrama de corpo livre com as reações de apoio. 
   <table><tr><td style="text-align: center;">
-<img src="/assets/img/ex1.1.png"></td></tr></table>
+<img src="/assets/img/exumum.png"></td></tr></table>
   </li>
   <li>Calcular as reações de apoio com as equações de equilíbrio.
 
@@ -29,17 +29,17 @@ $$ V_a = P(1 - \frac{a}{a+b}) \implies V_a = P(\frac{a+b}{a+b}-\frac{a}{a+b}) \i
   
   <li>Realizar os cortes para os esforços solicitantes
     <table><tr><td style="text-align: center;">
-<img src="/assets/img/ex1.2.png"></td></tr></table>
+<img src="/assets/img/exumdois.png"></td></tr></table>
 Analisando à esquerda de C1 (x > 0 e x < a)
     <table><tr><td style="text-align: center;">
-<img src="/assets/img/ex1.3.png"></td></tr></table>
+<img src="/assets/img/exumtrês.png"></td></tr></table>
 
 $$ \sum F_x = 0 \implies H_a + N = 0 \implies N = - H_a \implies N = 0 $$
 $$ \sum F_y = 0 \implies V_a + V = 0 \implies V = V_a \implies v = \frac{Pb}{a + b} $$
 $$ \sum M_{C1} = 0 \implies M - V_a * x = 0 \implies M = V_ax \implies M = x\frac{Pb}{a+b}$$
    Analisar a direita de C2 (X > a e X < a+b)
       <table><tr><td style="text-align: center;">
-<img src="/assets/img/ex1.4.png"></td></tr></table>
+<img src="/assets/img/exumquatro.png"></td></tr></table>
 
 $$ \sum F_x = 0 \implies N = 0 $$
 $$ \sum F_y = 0 \implies V_b + V = 0 \implies V = -V_b \implies V = \frac{-Pa}{a+b} $$
@@ -114,13 +114,13 @@ $$ M = aV_b + bV_b + xV_b \implies M = \frac{Pa²}{a+b} + \frac{Pab}{a+b} + \fra
 # Exemplo 2 
 Calcule as reações de apoio e esforços solicitantes do problema a seguir :
 
- <table><tr><td style="text-align: center;"><img src="/assets/img/ex2.0.png"></td></tr></table>
+ <table><tr><td style="text-align: center;"><img src="/assets/img/exdois.png"></td></tr></table>
 
 ### Resolução:
 
 <ol>
   <li>Desenhar o diagrama de corpo livre com as reações de apoio e substituir a força distribuída por uma força mecanicamente equivalente.
- <table><tr><td style="text-align: center;"><img src="/assets/img/ex2.1.png"></td></tr></table>
+ <table><tr><td style="text-align: center;"><img src="/assets/img/exdoisum.png"></td></tr></table>
 
 </li>
   <li>Calcular as reações de apoio com as equações de equilíbrio
@@ -131,9 +131,9 @@ $$ \sum M_a = 0 \implies \frac{-Pa²}{2} - Pc + H_b(C + b) = 0 \implies H_b = \f
 $$ H_a = -P + H_b \implies H_a = -P + \frac{Pa² + 2Pc}{2(c+b)} \implies H_a = \frac{Pa² + 2Pb}{2(c+b)} $$
 </li>
   <li>Realizar os cortes para os esforços solicitantes
-   <table><tr><td style="text-align: center;"><img src="/assets/img/ex2.2.png"></td></tr></table>
+   <table><tr><td style="text-align: center;"><img src="/assets/img/exdoisdois.png"></td></tr></table>
   Analisando a esquerda de C1 (x > 0 e x < a)
-     <table><tr><td style="text-align: center;"><img src="/assets/img/ex2.3.png"></td></tr></table>
+     <table><tr><td style="text-align: center;"><img src="/assets/img/exdoistrês.png"></td></tr></table>
     
 $$ \sum F_x = 0 \implies H_a + N = 0 \implies N = -H_a \implies N =  -\frac{Pa² + 2Pb}{2(c+b)} $$
 
@@ -142,7 +142,7 @@ $$ \sum M_{C1} = 0 \implies M - V_ax + \frac{Px²}{2} = 0 $$
 $$ M = V_ax - \frac{Px²}{2} \implies M = Pax - \frac{Px²}{2}$$
 
 Analisando acima de C2 ($y > b$ e $y < b+c$) (note-se que nesse exemplo, o momento fletor possui sentido arbitrário, pois não existem “fibras inferiores” em uma barra vertical)
-<table><tr><td style="text-align: center;"><img src="/assets/img/ex2.4.png"></td></tr></table>
+<table><tr><td style="text-align: center;"><img src="/assets/img/exdoisquatro.png"></td></tr></table>
 
 $$ \sum F_x = 0 \implies -H_b - V + P = 0 \implies V = \frac{Pa² + 2Pc}{2(c+b)} - P $$
 $$ \sum F_y = 0 \implies N = 0 $$
@@ -157,11 +157,11 @@ $$ M = \frac{Pa² + 2Pc}{2(c+b)}(-c +b +y) + P(c - y)$$
 # Exemplo 3 
 Calcule as reações de apoio do problema a seguir e os esforços solicitantes do centro da barra:
 
-<table><tr><td style="text-align: center;"><img src="/assets/img/ex3.0.png"></td></tr></table>
+<table><tr><td style="text-align: center;"><img src="/assets/img/extrês.png"></td></tr></table>
 
 DCL:
 
-<table><tr><td style="text-align: center;"><img src="/assets/img/ex3.1.png"></td></tr></table>
+<table><tr><td style="text-align: center;"><img src="/assets/img/extrêsum.png"></td></tr></table>
 
 $$ \sum F_x = 0 \implies H_a = 0 $$
 
@@ -172,7 +172,7 @@ $$ \sum M_a = 0 \implies -6V_b + \frac{9*3P}{2} + 2*\frac{3P}{2} = 0 \implies V_
 $$ V_a = -V_b + 3P + \frac{3P}{2} \implies V_a = -\frac{33P}{12} + \frac{36P}{12} + \frac{18P}{12} = \frac{7P}{4}$$
 
 Esforços solicitantes do centro da barra:
-<table><tr><td style="text-align: center;"><img src="/assets/img/ex3.2.png"></td></tr></table>
+<table><tr><td style="text-align: center;"><img src="/assets/img/extrêsdois.png"></td></tr></table>
 
 $$ \sum F_x = 0 \implies N = 0 $$
 
