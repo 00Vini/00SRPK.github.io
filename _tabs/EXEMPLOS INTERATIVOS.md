@@ -5,6 +5,32 @@ order: 5
 math: true
 ---
 
+<script src="https://unpkg.com/mathjs@11.8.0/lib/browser/math.js"></script>
+<script src="https://cdn.plot.ly/plotly-1.35.2.min.js"></script>
+
+  <style>
+  .input-barra {
+    width: 40px; /* Altere o valor para ajustar o tamanho da barra */
+    height: 40px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-style: groove;
+  }
+  .draw-buttom {
+    width: 80px; /* Altere o valor para ajustar o tamanho da barra */
+    height: 50px;
+    text-align: center;
+    background-color: rgba(11, 156, 49, 0.8);
+    border-style: outset;
+    border-radius: 15px;
+    font-size: 20px;
+  }
+  .table {
+    max-width: 750px;
+    max-height: 500px;
+  }
+</style>
+
 # Exemplo 1 
 Calcule as reações de apoio e esforços solicitantes do problema a seguir:
 
@@ -49,32 +75,6 @@ $$ M = aV_b + bV_b + xV_b \implies M = \frac{Pa²}{a+b} + \frac{Pab}{a+b} + \fra
   
   <li>
   Traçar os diagramas dos esforços solicitantes (Você pode ver as diferenças nos diagramas e reações de apoio para diferentes valores de P, a e b, basta alterar os valores nos campos determinados)
-  <style>
-  .input-barra {
-    width: 40px; /* Altere o valor para ajustar o tamanho da barra */
-    height: 40px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-style: groove;
-  }
-  .draw-buttom {
-    width: 80px; /* Altere o valor para ajustar o tamanho da barra */
-    height: 50px;
-    text-align: center;
-    background-color: rgba(11, 156, 49, 0.8);
-    border-style: outset;
-    border-radius: 15px;
-    font-size: 20px;
-  }
-  .table {
-    max-width: 750px;
-    max-height: 500px;
-  }
-</style>
-
-
-<script src="https://unpkg.com/mathjs@11.8.0/lib/browser/math.js"></script>
-<script src="https://cdn.plot.ly/plotly-1.35.2.min.js"></script>
 
 <body>
   <br>
@@ -107,7 +107,6 @@ $$ M = aV_b + bV_b + xV_b \implies M = \frac{Pa²}{a+b} + \frac{Pab}{a+b} + \fra
 </body>
   </li>
 </ol>
-
 
 
 
@@ -151,6 +150,51 @@ $$ M = \frac{Pa² + 2Pc}{2(c+b)}(-c +b +y) + P(c - y)$$
   </li>
   <li> Traçar os diagramas dos esforços solicitantes (Você pode ver as diferenças nos diagramas e reações de apoio para diferentes valores de P, a e b, basta alterar os valores nos campos determinados)
 
+  <body>
+  <br>
+  <form id="form_2">
+    <label for="eq">Escolha os valores que deseja aplicar à estrutura</label>
+    <p>Valor da carga (kN): <input type="text" id="c1_2" value="10" class="input-barra" /></p>
+    <p>Valor de a (m): <input type="text" id="a_2" value="7" class="input-barra"/></p>
+    <p>Valor de b (m): <input type="text" id="b_2" value="2" class="input-barra"/></p>
+    <p>Valor de c (m): <input type="text" id="c_2" value="5" class="input-barra"/></p>
+    <input type="submit" value="Draw" class="draw-buttom"/>
+    </form>
+  <br>
+
+  <table class="table"><tr><td style="text-align: center;">
+    <div id="plot-normal2a"></div>
+  </td></tr></table>
+
+  <table class="table"><tr><td style="text-align: center;">
+    <div id="plot-normal2b"></div>
+  </td></tr></table>
+
+  <table class="table"><tr><td style="text-align: center;">
+    <div id="plot-cortante2a"></div>
+  </td></tr></table>
+
+  <table class="table"><tr><td style="text-align: center;">
+    <div id="plot-cortante2b"></div>
+  </td></tr></table>
+
+  <table class="table"><tr><td style="text-align: center;">
+    <div id="plot-fletor2a"></div>
+  </td></tr></table>
+  
+  <table class="table"><tr><td style="text-align: center;">
+    <div id="plot-fletor2b"></div>
+  </td></tr></table>
+
+
+  <script src="/assets/js/grafico_normal_2a.js"></script>
+  <script src="/assets/js/grafico_normal_2b.js"></script>
+  <script src="/assets/js/grafico_cortante_2a.js"></script>
+  <script src="/assets/js/grafico_cortante_2b.js"></script>
+  <script src="/assets/js/grafico_fletor_2a.js"></script>
+  <script src="/assets/js/grafico_fletor_2b.js"></script>
+  </body>
+
   </li>
 </ol>
 
@@ -179,3 +223,33 @@ $$ \sum F_x = 0 \implies N = 0 $$
 $$ \sum F_y = 0 \implies V_b - V - 3P = 0 \implies V = V_b - 3P = -\frac{P}{4}$$
 
 $$ M_{C1} = 0 \implies -3V_b + \frac{3*3P}{2} + M = 0 \implies M = 3*\frac{33P}{12} - \frac{9P}{2} = \frac{15P}{4}$$
+
+Traçar os diagramas dos esforços solicitantes:
+
+<body>
+  <br>
+  <form id="form_3">
+    <label for="eq">Escolha os valores que deseja aplicar à estrutura</label>
+    <p>Valor da carga (kN): <input type="text" id="c1_3" value="10" class="input-barra" /></p>
+    <p>Valor de a (m): <input type="text" id="a_3" value="2" class="input-barra"/></p>
+    <p>Valor de b (m): <input type="text" id="b_3" value="5" class="input-barra"/></p>
+    <input type="submit" value="Draw" class="draw-buttom"/>
+  </form>
+<br>
+
+<table class="table"><tr><td style="text-align: center;">
+  <div id="plot-normal3"></div>
+</td></tr></table>
+
+<table class="table"><tr><td style="text-align: center;">
+  <div id="plot-cortante3"></div>
+</td></tr></table>
+
+<table class="table"><tr><td style="text-align: center;">
+  <div id="plot-fletor3"></div>
+</td></tr></table>
+
+  <script src="/assets/js/grafico_normal_3.js"></script>
+  <script src="/assets/js/grafico_cortante_3.js"></script>
+  <script src="/assets/js/grafico_fletor_3.js"></script>
+</body>
