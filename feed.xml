@@ -1,0 +1,55 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://00srpk.github.io/pef3208Basics//</id>
+  <title>PEF3208</title>
+  <subtitle>Apresentação didática dos conteúdos iniciais da disciplina PEF3208</subtitle>
+  <updated>2023-06-10T18:00:31-03:00</updated>
+  <author>
+    <name>Grupo_2</name>
+    <uri>https://00srpk.github.io/pef3208Basics//</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://00srpk.github.io/pef3208Basics//feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="pt-BR"
+    href="https://00srpk.github.io/pef3208Basics//"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
+  <rights> © 2023 Grupo_2 </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>BEM-VINDOS!</title>
+    <link href="https://00srpk.github.io/pef3208Basics//posts/titulo/" rel="alternate" type="text/html" title="BEM-VINDOS!" />
+    <published>2023-04-06T14:30:00-03:00</published>
+  
+    <updated>2023-06-07T11:04:27-03:00</updated>
+  
+    <id>https://00srpk.github.io/pef3208Basics//posts/titulo/</id>
+    <content src="https://00srpk.github.io/pef3208Basics//posts/titulo/" />
+    <author>
+      <name>Grupo_2</name>
+    </author>
+
+  
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Esse site foi feito com o intuito de apresentar alguns conceitos fundamentais de Mecânicas das Estruturas, apresentados na disciplina PEF3208. A ênfase foi para os conteúdos iniciais, partindo das noções básicas de mecânica, passando por vínculos e equilíbrio e terminando em esforços soliciantes. A proposta principal do site é ser mais um material à disposição do aluno, podendo servir como pont...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+
