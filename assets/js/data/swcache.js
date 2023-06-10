@@ -44,7 +44,7 @@ const resource = [
 const allowedDomains = [
     
 
-    '00srpk.github.io/pef3208Basics/',
+    'localhost:4000',
 
     
 
