@@ -12,7 +12,7 @@ let layout_v2b = {
 
 // expressão inicial da cortante
 let expression_v2b = {
-  equations: ["(-p*a^2 -2*p*b)/(2*(b+c)) + p", "(-p*a^2 -2*p*b)/(2*(b+c))"],
+  equations: ["(-p*a^2 -2*p*c)/(2*(b+c)) + p", "(-p*a^2 -2*p*c)/(2*(b+c))"],
   ranges: [[0, 5], [5, 7]]
 }
 

@@ -17,6 +17,8 @@ const resource = [
     
         '/ESFOR%C3%87OS-SOLICITANTES/',
     
+        '/ESTRUTURAS-3D/',
+    
         '/EXEMPLOS/',
     
         '/EXEMPLOS-INTERATIVOS/',
