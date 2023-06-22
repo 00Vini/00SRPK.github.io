@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 5
+order: 6
 math: true
 ---
 
@@ -70,7 +70,7 @@ $$ \sum M_{C1} = 0 \implies M - V_a * x = 0 \implies M = V_ax \implies M = x\fra
 $$ \sum F_x = 0 \implies N = 0 $$
 $$ \sum F_y = 0 \implies V_b + V = 0 \implies V = -V_b \implies V = \frac{-Pa}{a+b} $$
 $$ \sum M_{C2} = 0 \implies -M + V_b(a + b - x) = 0 \implies M = V_b(a + b - x) $$
-$$ M = aV_b + bV_b + xV_b \implies M = \frac{Pa²}{a+b} + \frac{Pab}{a+b} + \frac{Pax}{a+b}$$
+$$ M = aV_b + bV_b - xV_b \implies M = \frac{Pa²}{a+b} + \frac{Pab}{a+b} - \frac{Pax}{a+b}$$
   </li>
   
   <li>
@@ -127,7 +127,7 @@ Calcule as reações de apoio e esforços solicitantes do problema a seguir :
 $$ \sum F_x = 0 \implies H_a - H_b + P = 0 $$
 $$ \sum F_y = 0 \implies V_a - Pa = 0 \implies V_a = Pa$$
 $$ \sum M_a = 0 \implies \frac{-Pa²}{2} - Pc + H_b(C + b) = 0 \implies H_b = \frac{Pa² + 2Pc}{2(c+b)}$$
-$$ H_a = -P + H_b \implies H_a = -P + \frac{Pa² + 2Pc}{2(c+b)} \implies H_a = \frac{Pa² + 2Pb}{2(c+b)} $$
+$$ H_a = -P + H_b \implies H_a = -P + \frac{Pa² + 2Pc}{2(c+b)} \implies H_a = \frac{Pa² - 2Pb}{2(c+b)} $$
 </li>
   <li>Realizar os cortes para os esforços solicitantes
    <table><tr><td style="text-align: center;"><img src="/assets/img/exdoisdois.png"></td></tr></table>
@@ -143,10 +143,19 @@ $$ M = V_ax - \frac{Px²}{2} \implies M = Pax - \frac{Px²}{2}$$
 Analisando acima de C2 ($y > b$ e $y < b+c$) (note-se que nesse exemplo, o momento fletor possui sentido arbitrário, pois não existem “fibras inferiores” em uma barra vertical)
 <table><tr><td style="text-align: center;"><img src="/assets/img/exdoisquatro.png"></td></tr></table>
 
-$$ \sum F_x = 0 \implies -H_b - V + P = 0 \implies V = \frac{Pa² + 2Pc}{2(c+b)} - P $$
+$$ \sum F_x = 0 \implies -H_b - V + P = 0 \implies V = \frac{-Pa² - 2Pc}{2(c+b)} + P $$
 $$ \sum F_y = 0 \implies N = 0 $$
 $$ \sum M_{C2} = 0 \implies M + H_b(c+b-y) - P (c - y) = 0 $$
-$$ M = \frac{Pa² + 2Pc}{2(c+b)}(-c +b +y) + P(c - y)$$
+$$ M = \frac{Pa² + 2Pc}{2(c+b)}(-c - b + y) + P(c - y)$$
+  
+Analisando acima de C3 (y < b)
+
+<table><tr><td style="text-align: center;"><img src="/assets/img/exdoiscinco.png"></td></tr></table>
+
+$$ \sum F_{x} = 0 \implies -H_{b} - V = 0 \implies V = \frac{-Pa²-Pc}{2(c+b)}$$
+$$ \sum F_{y} = 0 \implies N = 0 $$
+$$ \sum M_{C3} = 0 \implies M + H_{b}(c + b - y) = 0 \implies M = -(c + b - y)\frac{Pa²+2Pc}{2(b+c)}$$
+
   </li>
   <li> Traçar os diagramas dos esforços solicitantes (Você pode ver as diferenças nos diagramas e reações de apoio para diferentes valores de P, a e b, basta alterar os valores nos campos determinados)
 
@@ -224,7 +233,7 @@ $$ \sum F_y = 0 \implies V_b - V - 3P = 0 \implies V = V_b - 3P = -\frac{P}{4}$$
 
 $$ M_{C1} = 0 \implies -3V_b + \frac{3*3P}{2} + M = 0 \implies M = 3*\frac{33P}{12} - \frac{9P}{2} = \frac{15P}{4}$$
 
-Traçar os diagramas dos esforços solicitantes:
+O exercício foi feito com valores definidos para os tamanho das seções constantes (a) e linear (b) do carregamento aplicado. A seguir há um modelo interativo no qual você pode testar valores diferentes e verificar o comportamento dos esforços solicitantes na barra. 
 
 <body>
   <br>

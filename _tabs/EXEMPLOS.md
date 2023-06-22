@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 4
+order: 5
 math: true
 ---
  Para colocar em prática os conceitos dessa disciplina, é fundamental a realização de exercícios. Para isso, separamos alguns exercícios para você leitor praticar. Os exercícios estão com o passo a passo para resolvê-los, mas a cada exercício iremos avançar mais
@@ -12,7 +12,7 @@ math: true
 <table><tr><td style="text-align: center;"><img src="/assets/img/um.png"></td></tr></table>
 
 ### Resolução:
-DLC e equilíbrio:
+DCL e equilíbrio:
   <table><tr><td style="text-align: center;"><img src="/assets/img/umum.png"></td></tr></table>
   
 $$ \sum F_x = 0 \implies -H_a + 2P = 0 \implies H_a = 2P $$ 
